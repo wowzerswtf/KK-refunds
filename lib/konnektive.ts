@@ -5,7 +5,7 @@ import type {
   KonnektiveFulfillment,
 } from '@/types';
 
-const BASE_URL = 'https://api.konnektive.com';
+const BASE_URL = process.env.KONNEKTIVE_API_URL || 'https://api.konnektive.com';
 const MAX_RETRIES = 3;
 const BASE_DELAY = 500;
 const TIMEOUT = 10000;
